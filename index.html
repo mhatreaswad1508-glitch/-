@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="mr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>श्री विष्णुबुवा वावंजेकर | भजन व अभंग</title>
+  <meta name="description" content="श्री विष्णुबुवा वावंजेकर यांचे भजन आणि अभंग">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🪔 वारकरी भक्तीपरंपरा</div>
+    <nav>
+      <a href="#home">मुखपृष्ठ</a>
+      <a href="#songs">भजन व अभंग</a>
+      <a href="#about">माहिती</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="eyebrow">॥ श्री विठ्ठल नामस्मरण ॥</div>
+        <h1>श्री विष्णुबुवा<br><span>वावंजेकर</span></h1>
+        <p>भजन • अभंग • भक्तिसंगीत</p>
+        <a class="cta" href="#songs">🎵 भजन ऐका</a>
+      </div>
+    </section>
+
+    <section class="intro" id="about">
+      <div class="section-tag">भक्तीमय स्वरांची मैफल</div>
+      <h2>भजन आणि अभंग</h2>
+      <p>
+        श्री विष्णुबुवा वावंजेकर यांच्या भक्तिसंगीतातील निवडक भजन व अभंग
+        एकाच ठिकाणी ऐकण्यासाठी हे व्यासपीठ.
+      </p>
+    </section>
+
+    <section class="songs" id="songs">
+      <div class="section-heading">
+        <div>
+          <div class="section-tag">AUDIO COLLECTION</div>
+          <h2>निवडक भजने व अभंग</h2>
+        </div>
+        <span class="count">३ रचना</span>
+      </div>
+
+      <div class="song-grid">
+        <article class="song-card">
+          <div class="song-number">०१</div>
+          <div class="music-icon">🎵</div>
+          <div class="song-info">
+            <h3>कृपाळू हा पंढरीनाथ</h3>
+            <p>श्री विष्णुबुवा वावंजेकर</p>
+            <audio controls preload="metadata">
+              <source src="krupalu-ha-pandharinath.mp3" type="audio/mpeg">
+              तुमच्या ब्राउझरमध्ये audio player उपलब्ध नाही.
+            </audio>
+          </div>
+        </article>
+
+        <article class="song-card">
+          <div class="song-number">०२</div>
+          <div class="music-icon">🎵</div>
+          <div class="song-info">
+            <h3>तोचि वारकरी पंढरीचा</h3>
+            <p>श्री विष्णुबुवा वावंजेकर</p>
+            <audio controls preload="metadata">
+              <source src="tochi-varkari-pandharicha.mp3" type="audio/mpeg">
+              तुमच्या ब्राउझरमध्ये audio player उपलब्ध नाही.
+            </audio>
+          </div>
+        </article>
+
+        <article class="song-card">
+          <div class="song-number">०३</div>
+          <div class="music-icon">🎵</div>
+          <div class="song-info">
+            <h3>गणराया लवकर येई</h3>
+            <p>श्री विष्णुबुवा वावंजेकर</p>
+            <audio controls preload="metadata">
+              <source src="ganraya-lavkar-yei.mp3" type="audio/mpeg">
+              तुमच्या ब्राउझरमध्ये audio player उपलब्ध नाही.
+            </audio>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="quote-mark">“</div>
+      <p>नामातच समाधान, अभंगातच भक्ती आणि स्वरांतून विठ्ठलाचा अनुभव.</p>
+      <span>॥ पांडुरंग हरी ॥</span>
+    </section>
+  </main>
+
+  <footer>
+    <div>॥ जय जय राम कृष्ण हरी ॥</div>
+    <p>श्री विष्णुबुवा वावंजेकर • भजन व अभंग संग्रह</p>
+  </footer>
+
+  <script>
+    const audios = [...document.querySelectorAll("audio")];
+    audios.forEach(audio => {
+      audio.addEventListener("play", () => {
+        audios.forEach(other => { if (other !== audio) other.pause(); });
+      });
+    });
+  </script>
+</body>
+</html>
